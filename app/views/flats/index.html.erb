@@ -1,0 +1,43 @@
+
+
+<div class="container">
+  <h1>Liste des appartements</h1>
+    <% @flats.each do |flat| %>
+      <h2><%= flat.name %></h2>
+      <p><%= flat.address %></p>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title"><%= flat.name %></h5>
+            <p class="card-text"><%= flat.description %></p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+  </div>
+<% end  %>
+
+
+
+
+<!-- <h1>Liste des appartements</h1>
+<% @flats.each do |flat| %>
+  <h2><%= flat.name %></h2>
+  <p><%= flat.address %></p>
+<% end %> -->
+
+<!-- Flat.create!(
+  name: 'Jolie duplex à 500 mètres de la grande plage',
+  address: 'Saint Charles',
+  description: 'Grand appartement avec de très jolie volume. Coup de coeur garantie',
+  price_per_night: 300,
+  number_of_guests: 5
+) -->
+
+<!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
